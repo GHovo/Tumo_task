@@ -1,10 +1,11 @@
 package configs.browser;
 
 import configs.reader.ConfigurationReader;
-import constants.BaseConstants;
-import constants.BrowserTypes;
+import constants.base.BaseConstants;
+import constants.base.BrowserTypes;
 
-import static constants.BaseConstants.BROWSER;
+import static constants.base.BaseConstants.BROWSER;
+import static constants.base.BaseConstants.CONFIG_PROPERTIES_PATH;
 
 public class BrowserConfiguration extends ConfigurationReader {
     private static BrowserConfiguration INSTANCE;
@@ -15,7 +16,7 @@ public class BrowserConfiguration extends ConfigurationReader {
 
     public static BrowserConfiguration getInstance() {
         if(INSTANCE == null){
-            INSTANCE = new BrowserConfiguration("src/main/resources/properties/config.properties");
+            INSTANCE = new BrowserConfiguration(CONFIG_PROPERTIES_PATH);
         }
         return INSTANCE;
     }

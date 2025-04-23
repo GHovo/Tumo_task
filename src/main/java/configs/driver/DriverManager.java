@@ -1,7 +1,7 @@
 package configs.driver;
 
 import configs.browser.BrowserConfiguration;
-import constants.BrowserTypes;
+import constants.base.BrowserTypes;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

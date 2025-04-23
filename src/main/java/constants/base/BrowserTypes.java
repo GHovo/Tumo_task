@@ -1,4 +1,4 @@
-package constants;
+package constants.base;
 
 import lombok.Getter;
 
