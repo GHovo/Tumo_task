@@ -144,6 +144,7 @@ public class LoginTest extends BaseTest {
                 .isTrue();
         
     }
+
     @Test
     @DisplayName("Validate logout functionality")
     public void validateLogout(){
