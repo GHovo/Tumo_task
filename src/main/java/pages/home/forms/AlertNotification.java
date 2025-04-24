@@ -30,11 +30,11 @@ public class AlertNotification extends BasePage {
     @Step("Get alert notification title")
     public String getAlertNotificationTitle(){
         wait.untilVisible(alertNotificationTitle);
-       return alertNotificationTitle.getText();
+        return alertNotificationTitle.getText();
     }
     @Step("Get alert notification text")
     public String getAlertNotificationText(){
         wait.untilVisible(alertNotificationText);
-       return alertNotificationText.getText();
+        return alertNotificationText.getText();
     }
 }
