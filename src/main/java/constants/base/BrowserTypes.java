@@ -1,8 +1,5 @@
 package constants.base;
 
-import lombok.Getter;
-
-@Getter
 public enum BrowserTypes {
     CHROME("chrome"),
     FIREFOX("firefox"),
@@ -21,6 +18,9 @@ public enum BrowserTypes {
             }
         }
         throw new IllegalArgumentException("Does not exist " +  type + "type");
+    }
+    public String getType() {
+        return type;
     }
 }
 

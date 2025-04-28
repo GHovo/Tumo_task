@@ -1,8 +1,5 @@
 package api.languages;
 
-import lombok.Getter;
-
-@Getter
 public enum Language {
     ENGLISH("gb"),
     ARMENIAN("am");
@@ -13,4 +10,7 @@ public enum Language {
         this.titleAttribute = titleAttribute;
     }
 
+    public String getTitleAttribute() {
+        return titleAttribute;
+    }
 }
